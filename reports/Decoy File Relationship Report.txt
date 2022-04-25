@@ -1,0 +1,10 @@
+++++REPORT++++
+Decoy File Extensions Counts:
+doc    44608
+pdf    16169
+jpg     4337
+txt     4123
+zip     4023
+exe      493
+Name: fileExtension, dtype: int64
+

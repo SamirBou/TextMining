@@ -1,0 +1,49 @@
+++++REPORT++++
+File Extensions Counts:
+doc    37490
+pdf    12176
+txt     3237
+jpg     3091
+zip     2909
+exe      514
+Name: fileExtension, dtype: int64
+
+File Activity Counts:
+File Open      17082
+File Write     10748
+File Copy        999
+File Delete      628
+Name: activity, dtype: int64
+
+Most Common File Open Phrases:
+the cub's first    258
+the Berlin Zoo     243
+most of the        229
+kg (110 lb)        202
+50 kg (110         202
+dtype: int64
+
+Most Common File Write Phrases:
+one of the               45
+project close meeting    34
+of the German            31
+get a chance             30
+we get a chance          30
+dtype: int64
+
+Most Common File Copy Phrases:
+the Sumatran Rhinoceros    63
+the series was             57
+met were owed a            55
+concluded that the         55
+The Independent about      55
+dtype: int64
+
+Most Common File Delete Phrases:
+the Sumatran Rhinoceros    35
+one of the                 25
+as well as                 19
+part of the                19
+the rest of                19
+dtype: int64
+

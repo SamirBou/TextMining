@@ -1,0 +1,15 @@
+++++REPORT++++
+Most Common Personality Scores of Insiders:
+High BFI scores:
+64 insiders were found to have high levels of openness
+48 insiders were found to have high levels of conscientiousness
+34 insiders were found to have high levels of extraversion
+42 insiders were found to have high levels of agreeableness
+4 insiders were found to have high levels of neuroticism
+
+Low BFI scores:
+36 insiders were found to have low levels of openness
+43 insiders were found to have low levels of conscientiousness
+61 insiders were found to have low levels of extraversion
+65 insiders were found to have low levels of agreeableness
+3 insiders were found to have low levels of neuroticism
