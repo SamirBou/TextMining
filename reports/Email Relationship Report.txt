@@ -1,5 +1,5 @@
 ++++REPORT++++
-Email Common Phrases:
+Common Phrases in email sent by insiders:
 i am irreplaceable     15
 company will suffer    12
 take me seriously       8
@@ -7,7 +7,7 @@ you are appreciated     7
 i will leave            7
 dtype: int64
 
-Most common files extensions in emails sent by insiders
+Most common files extensions in emails sent by insiders:
 doc    42
 pdf    30
 zip    13
@@ -15,7 +15,7 @@ jpg     2
 txt     1
 Name: attachments, dtype: int64
 
-Most common files sent by insiders
+Most common files sent by insiders:
 LKVBCPT6.pdf    10
 25IN4DT6.zip     7
 7R4T6PQ4.doc     4

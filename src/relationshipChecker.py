@@ -21,22 +21,22 @@ def filesRelationship(filesInput):
 
     #Find most common phrases for each activity and report them
     content = [y for x in openContent for y in x.split()]
-    n = [3,4]
+    n = [4]
     count = pd.Series([' '.join(y) for x in n for y in ngrams(content, x)]).value_counts().nlargest(5)
     report+=("Most Common File Open Phrases:\n"+str(count)+"\n\n")
 
     content = [y for x in writeContent for y in x.split()]
-    n = [3,4]
+    n = [4]
     count = pd.Series([' '.join(y) for x in n for y in ngrams(content, x)]).value_counts().nlargest(5)
     report+=("Most Common File Write Phrases:\n"+str(count)+"\n\n")
 
     content = [y for x in copyContent for y in x.split()]
-    n = [3,4]
+    n = [4]
     count = pd.Series([' '.join(y) for x in n for y in ngrams(content, x)]).value_counts().nlargest(5)
     report+=("Most Common File Copy Phrases:\n"+str(count)+"\n\n")
 
     content = [y for x in deleteContent for y in x.split()]
-    n = [3,4]
+    n = [4]
     count = pd.Series([' '.join(y) for x in n for y in ngrams(content, x)]).value_counts().nlargest(5)
     report+=("Most Common File Delete Phrases:\n"+str(count)+"\n\n")
 
@@ -57,7 +57,7 @@ def decoyFilesRelationship(decoyFilesInput):
 
 def emailsRelationship(emailsInput):
     #Start Report
-    report="++++REPORT++++\nEmail Common Phrases:\n"
+    report="++++REPORT++++\nCommon Phrases in email sent by insiders:\n"
 
     #Find common phrases in emails sent by insiders
     emailsSentContent=emailsInput[emailsInput['activity']=='Send']['content'].dropna(how='all')
@@ -72,8 +72,8 @@ def emailsRelationship(emailsInput):
     attachmentNames = attachmentNames.str.split('(').str[0]
     mostCommonSentFiles = attachmentNames.str.split('\\').str[-1]
     mostCommonFileExtensions = mostCommonSentFiles.str.split('.').str[-1]
-    report+="Most common files extensions in emails sent by insiders\n"+str(mostCommonFileExtensions.value_counts().nlargest(5))+"\n\n"
-    report+="Most common files sent by insiders\n"+str(mostCommonSentFiles.value_counts().nlargest(5))+"\n\n"
+    report+="Most common files extensions in emails sent by insiders:\n"+str(mostCommonFileExtensions.value_counts().nlargest(5))+"\n\n"
+    report+="Most common files sent by insiders:\n"+str(mostCommonSentFiles.value_counts().nlargest(5))+"\n\n"
 
     #Write report to report directory
     os.makedirs(os.path.dirname("./reports/Email Relationship Report.txt"), exist_ok=True)

@@ -16,34 +16,34 @@ File Delete      628
 Name: activity, dtype: int64
 
 Most Common File Open Phrases:
-the cub's first    258
-the Berlin Zoo     243
-most of the        229
-kg (110 lb)        202
-50 kg (110         202
+50 kg (110 lb)              202
+the north shore of          132
+on the north shore          132
+the Russian naval forces    131
+broadcast live on German    129
 dtype: int64
 
 Most Common File Write Phrases:
-one of the               45
-project close meeting    34
-of the German            31
-get a chance             30
-we get a chance          30
+we get a chance              30
+hope we get a                30
+send me your availability    25
+A Voyage round the           18
+Voyage round the World       14
 dtype: int64
 
 Most Common File Copy Phrases:
-the Sumatran Rhinoceros    63
-the series was             57
-met were owed a            55
-concluded that the         55
-The Independent about      55
+that the children he                55
+his visit to Zambia                 55
+social and moral responsibility.    55
+a social and moral                  55
+owed a social and                   55
 dtype: int64
 
 Most Common File Delete Phrases:
-the Sumatran Rhinoceros    35
-one of the                 25
-as well as                 19
-part of the                19
-the rest of                19
+and the rest of               12
+of the Sumatran Rhinoceros    12
+the end of the                11
+the rest of the               11
+of the High Seas              10
 dtype: int64
 
