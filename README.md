@@ -2,7 +2,7 @@
 To run code an additional download is necessary. The data used in this repo is larger than GitHub's individual file upload size.
 
 Download the zip file from this link: 
-https://anonfiles.com/P4f6qda9yf/data_zip
+https://anonfiles.com/V2E2qca1y8/data_zip
 
 Extract the "data" folder from within the zip to the root of the repo. After extracting the folder running the following scripts in this order.
     1. combinationScripts/decoyMerge.py
