@@ -50,6 +50,14 @@ def decoyFilesRelationship(decoyFilesInput):
     decoyFilesInput['fileExtension'] = decoyFilesInput.decoy_filename.str.split('.').str[-1]
     report="++++REPORT++++\nDecoy File Extensions Counts:\n"+str(decoyFilesInput['fileExtension'].value_counts())+"\n\n"
 
+    #Find common phrases in emails sent by insiders
+    decoyFilesInput['decoyFilesNames'] = decoyFilesInput.decoy_filename.str.split('.').str[0]
+    decoyFilesInput['decoyFilesNames'] = decoyFilesInput.decoyFilesNames.str.split("\\").str[-1]
+    content = [y for x in decoyFilesInput['decoyFilesNames'] for y in x.split()]
+    n = [1]
+    count = pd.Series([' '.join(y) for x in n for y in ngrams(content, x)]).value_counts().nlargest(5)
+    report+=("Most Common Decoy File Names:\n"+str(count)+"\n\n")
+
     #Write report to report directory
     os.makedirs(os.path.dirname("./reports/Decoy File Relationship Report.txt"), exist_ok=True)
     with open("./reports/Decoy File Relationship Report.txt", "w") as f:

@@ -8,3 +8,11 @@ zip     4023
 exe      493
 Name: fileExtension, dtype: int64
 
+Most Common Decoy File Names:
+9JWV9YSV    1
+JGYG7PR4    1
+JLRKRQIW    1
+BWQVWZM2    1
+JTK85S2S    1
+dtype: int64
+
