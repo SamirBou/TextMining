@@ -90,7 +90,7 @@ def emailsRelationship(emailsInput):
 
 def psychometricsRelationship(psychometricsInput):
     #Start Report
-    report="++++REPORT++++\nMost Common Personality Scores of Insiders:\n"
+    report="++++REPORT++++\n"
 
     #Count how many insiders had high scores of each personality trait
     report+="High BFI scores:\n"
